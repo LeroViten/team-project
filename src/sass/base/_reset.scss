@@ -18,9 +18,8 @@ img {
   height: auto;
 }
 body {
-  font-family: var(--main-font);
-  font-weight: 400;
-  background: var(--main-color);
+  font-family: $main-font;
+  background-color: $bg-color;
 }
 
 .link {
@@ -31,4 +30,8 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.address {
+  font-style: normal;
 }
