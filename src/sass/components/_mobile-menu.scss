@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+        .main__btn {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 1199px) {
+    .nav__list {
+        display: none;
+    }
+
+    .hero__right-side {
+        display: none;
+    }
+
+    .about-milk {
+        display: none;
+    }
+      
+    .burger-btn {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        padding: 0;
+        transition: fill var(--main-animation);
+        &:hover,
+        &:focus {
+            fill: var();
+        }
+    }
+
+    .burger-icon {
+        width: 20px;
+        height: 12px;
+    }
+}
