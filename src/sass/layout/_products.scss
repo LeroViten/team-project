@@ -96,29 +96,60 @@
   top: 42%;
   transform: translate(-50%, -42%);
 }
-
 .products-list__title-ice-cream::before {
-  content: url(../images/products/mobile/home-pic1.png);
+  content: '';
   display: block;
   position: absolute;
-  top: -23%;
-  left: 8%;
+  background-image: url(../images/products/mobile/home-pic1.png);
+  background-repeat: no-repeat;
+  width: 249px;
+  height: 252px;
+  top: -113px;
+  left: 14px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/products/mobile/home-pic1@2x.png);
+    background-size: 249px 252px;
+  }
 }
 
 .products-list__title-ice-coffee::before {
-  content: url(../images/products/mobile/home-pic2.png);
+  content: '';
   display: block;
   position: absolute;
-  top: -23%;
-  left: 8%;
+  background-image: url(../images/products/mobile/home-pic2.png);
+  background-repeat: no-repeat;
+  width: 249px;
+  height: 252px;
+  top: -113px;
+  left: 14px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/products/mobile/home-pic2@2x.png);
+    background-size: 249px 252px;
+  }
 }
 
 .products-list__title-milkshakes::before {
-  content: url(../images/products/mobile/home-pic3.png);
+  content: '';
   display: block;
   position: absolute;
-  top: -23%;
-  left: 8%;
+  background-image: url(../images/products/mobile/home-pic3.png);
+  background-repeat: no-repeat;
+  width: 249px;
+  height: 252px;
+  top: -113px;
+  left: 14px;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/products/mobile/home-pic3@2x.png);
+    background-size: 249px 252px;
+  }
 }
 
 .products-list__text {
@@ -189,18 +220,54 @@
   }
 
   .products-list__title-ice-cream::before {
-    content: url(../images/products/tablet/home-pic1.png);
+    content: '';
+    background-image: url(../images/products/tablet/home-pic1.png);
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 226px;
+    top: -103px;
     left: 0;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/products/tablet/home-pic1@2x.png);
+      background-size: 220px 226px;
+    }
   }
 
   .products-list__title-ice-coffee::before {
-    content: url(../images/products/tablet/home-pic2.png);
+    content: '';
+    background-image: url(../images/products/tablet/home-pic2.png);
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 226px;
+    top: -103px;
     left: 0;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/products/tablet/home-pic2@2x.png);
+      background-size: 220px 226px;
+    }
   }
 
   .products-list__title-milkshakes::before {
-    content: url(../images/products/tablet/home-pic3.png);
+    content: '';
+    background-image: url(../images/products/tablet/home-pic3.png);
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 226px;
+    top: -103px;
     left: 0;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/products/tablet/home-pic3@2x.png);
+      background-size: 220px 226px;
+    }
   }
 }
 
@@ -240,18 +307,51 @@
   }
 
   .products-list__title-ice-cream::before {
-    content: url(../images/products/desk/home-pic1.png);
-    top: -43%;
+    content: '';
+    background-image: url(../images/products/desk/home-pic1.png);
+    background-repeat: no-repeat;
+    width: 335px;
+    height: 335px;
+    top: -212px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/products/desk/home-pic1@2x.png);
+      background-size: 335px 335px;
+    }
   }
 
   .products-list__title-ice-coffee::before {
-    content: url(../images/products/desk/home-pic2.png);
-    top: -43%;
+    content: '';
+    background-image: url(../images/products/desk/home-pic2.png);
+    background-repeat: no-repeat;
+    width: 335px;
+    height: 335px;
+    top: -212px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/products/desk/home-pic2@2x.png);
+      background-size: 335px 335px;
+    }
   }
 
   .products-list__title-milkshakes::before {
-    content: url(../images/products/desk/home-pic3.png);
-    top: -43%;
+    content: '';
+    background-image: url(../images/products/desk/home-pic3.png);
+    background-repeat: no-repeat;
+    width: 335px;
+    height: 335px;
+    top: -212px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/products/desk/home-pic3@2x.png);
+      background-size: 335px 335px;
+    }
   }
 
   .products-list__title::after {
