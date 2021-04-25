@@ -1,0 +1,235 @@
+.about {
+    background-color: $section-bg-color;
+    padding-top: 125px;
+    padding-bottom: 39px;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px){
+        & {
+            padding-top: 130px;
+            padding-bottom: 65px;
+        }
+    }
+}
+
+.about__label {
+    font-family: $secondary-font;
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: $pale-bg-color;
+    text-align: center;
+
+    @media screen and (min-width: 768px){
+        & {
+            font-size: 26px;
+            line-height: 1.15;
+        }
+    }
+    
+    @media screen and (min-width: 1280px){
+        & {
+            font-size: 30px;
+            line-height: 1.13;
+        }
+    }
+}
+
+.about__title {
+    font-family: $secondary-font;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+    margin-top: 15px;
+    margin-bottom: 26px;
+
+    @media screen and (min-width: 768px){
+        & {
+            font-size: 48px;
+            margin-bottom: 50px;
+        }
+    }
+
+    @media screen and (min-width: 1280px){
+        & {
+            font-size: 58px;
+            line-height: 1.14;
+            margin-bottom: 55px;
+        }
+    }
+}
+
+    .about__desc {
+
+        @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+
+.about__picture {
+    max-width: 280px;
+    height: 100%;
+
+    @media screen and (min-width: 768px){
+        & {
+            max-width: 340px;
+        }
+    }
+
+    @media screen and (min-width: 1280px){
+        & {
+            max-width: 516px;
+        }
+    }
+}
+
+.about__text1, .about__text2, .about__text3  {
+    max-width: 220px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px){
+        & {
+            max-width: 340px;
+            font-size: 14px;
+            line-height: 1.76;
+        }
+    }
+
+    @media screen and (min-width: 1280px){
+        & {
+            max-width: 463px;
+            font-size: 16px;
+        }
+    }
+}
+
+.about__text2, .about__text3 {
+    color: #907E82;
+
+    @media screen and (min-width: 1280px){
+        & {
+            font-size: 14px;
+            line-height: 1.94;
+        }
+    }
+}
+
+.about__text1 {    
+    margin-top: 46px;
+
+    @media screen and (min-width: 768px){
+        & {
+            margin-top: 50px;
+        }
+    }
+
+    @media screen and (min-width: 1280px){
+        & {
+            margin-top: 51px;
+        }
+    }
+}
+
+.about__text2 {
+    margin-top: 30px;
+    margin-bottom: 19px;
+
+    @media screen and (min-width: 768px){
+        & {
+            margin-bottom: 24px;
+        }
+    }
+
+    @media screen and (min-width: 1280px){
+        & {
+            margin-top: 35px;
+            margin-bottom: 27px;
+        }
+    }
+}
+
+.about__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 176px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    background: #FFFFFF;
+    color: $accent-color;
+    border-style: none;
+    border-radius: 22px;
+    margin-left: 30px;
+    margin-top: 17px;
+    cursor: pointer;
+    transition: background-color $transition-duration $transition-function;
+  
+    &:focus,
+    &:hover {
+        background-color: #ECEBEB;
+    }
+
+    @media screen and (min-width: 768px){
+        & {
+            margin-top: 62px;
+            margin-left: 0px;
+        }
+    }
+
+    @media screen and (min-width: 1280px){
+        & {
+            margin-top: 41px;
+        }
+    }
+}
+
+.about__btn-arrow{
+    margin-left: 13.62px;
+}
+
+.about {
+
+    @media screen and (max-width: 767px) {
+    background-image: url("../images/about/mobile/sectionbg.png");
+    background-position: left bottom 99px;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url("../images/about/mobile/sectionbg@2x.png");
+            }
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        background-image: url("../images/about/desktop/sectionbg.png");
+        background-position: left bottom -30px;
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url("../images/about/desktop/sectionbg@2x.png");
+            }
+        }
+    }
+}
+
