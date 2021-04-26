@@ -4,10 +4,16 @@
   padding-bottom: 82px;
 }
 
-.contacts__lists {
-  display: flex;
-  margin-right: -20px;
-  margin: top -46px;
+.contacts-lists {
+  display: block;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: -20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: -25px;
+  }
 }
 .contacts-lists__card {
   padding-left: 20px;
@@ -203,6 +209,11 @@
     justify-content: center;
   }
 }
+.about__btn-location {
+  fill: $white-color;
+  color: $white-color;
+  margin-left: 13.62px;
+}
 .contacts-button__locations {
   display: block;
   margin: 0 auto;
@@ -228,10 +239,10 @@
   margin-bottom: 10px;
   background: $white-color;
   color: #d41342;
-  &:hover,
+  /*&:hover,
   &:focus {
     background: $white-color;
-  }
+  }*/
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
     margin-right: 15px;
