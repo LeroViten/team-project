@@ -6,7 +6,7 @@
         </a>
         <ul class="nav__list list">
           <li class="nav__item">
-            <a class="nav__link nav__link--current link" link href="index.html">Home</a>
+            <a class="nav__link link" link href="index.html">Home</a>
           </li>
           <li class="nav__item">
             <a class="nav__link link" link href="">About us</a>
@@ -22,7 +22,7 @@
           </li>
         </ul>
       </nav>
-      <button class="burger-btn" type="button">
+      <button class="burger-btn" type="button" data-menu-button>
         <svg class="burger-icon">
           <use href="./images/sprite.svg#icon-Burger"></use>
         </svg>
@@ -88,5 +88,33 @@
         </picture>
       </div>
     </div>
-    
+    <div class="mobile-menu" data-menu>
+      <button class="mobile-menu__close-btn" type="button" data-menu-close>
+          <svg class="mobile-menu__close-icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+      </button>
+      <button class="modal__btn" type="button">Buy now 
+        <svg class="about__btn-arrow" Width="4.43" Height="8">
+          <use href="./images/sprite.svg#icon-order-arrow"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__list list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" link href="">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" link href="">About us</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" link href="">How it’s made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" link href="">Our products</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" link href="">Contact</a>
+        </li>
+      </ul>
+    </div>
   </header>
