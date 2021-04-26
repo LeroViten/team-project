@@ -12,6 +12,7 @@
   position: relative;
   border-radius: 24px;
   min-height: 485px;
+  text-align: center;
 }
 
 .products-list__item:not(:last-child) {
@@ -56,9 +57,7 @@
 }
 
 .products-list__button {
-  position: absolute;
-  left: 43%;
-  bottom: 40px;
+  margin-bottom: 41px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -66,8 +65,6 @@
   border: none;
   background: url(../images/products/arrow-right.png);
   cursor: pointer;
-  margin: 0;
-  padding: 0;
 }
 
 .products-list__title {
@@ -155,7 +152,7 @@
 .products-list__text {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 62px;
+  margin-bottom: 30px;
   max-width: 200px;
   font-family: DM Sans;
   font-style: normal;
@@ -207,7 +204,7 @@
   }
 
   .products-list__text {
-    margin-bottom: 0;
+    margin-bottom: 40px;
     max-width: 198px;
     line-height: 1.76;
   }
@@ -293,6 +290,7 @@
   }
 
   .products-list__text {
+    margin-bottom: 62px;
     overflow: hidden;
     max-height: 106px;
     max-width: 241px;

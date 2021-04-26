@@ -23,11 +23,11 @@
   justify-content: space-between;
   padding-top: 8px;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     justify-content: flex-start;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 37px;
   }
 }
@@ -35,17 +35,17 @@
 .logo {
   padding-left: -70px;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding-right: 291px;
   }
 
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     padding-right: 110px;
     margin-left: -68px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
@@ -63,7 +63,7 @@
   z-index: 55;
 }
 
-@media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .burger-btn {
     display: none;
   }
@@ -99,11 +99,11 @@
   justify-content: space-between;
   padding-bottom: 160px;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding-bottom: 19px;
   }
 
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     padding-bottom: 56px;
   }
 }
@@ -113,12 +113,12 @@
   width: 208px;
   padding-top: 137px;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 162px;
     padding-top: 15px;
   }
 
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     width: 277px;
     padding-top: 84px;
   }
@@ -142,12 +142,12 @@
     color: $accent-color;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 22px;
     line-height: 1.136em;
   }
 
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     font-size: 38px;
     line-height: 1.157em;
   }
@@ -156,7 +156,7 @@
 .hero__nav-list {
   display: flex;
   padding-top: 19px;
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 25px;
   }
 }
@@ -199,11 +199,11 @@
   display: flex;
   padding-top: 12px;
 
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 74px;
   }
 }
@@ -302,17 +302,38 @@
   display: flex;
   align-items: center;
   padding-bottom: 45px;
+  margin-bottom: 7px;
 
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
   }
 }
 
-.milk-text {
-  width: 200px;
+.hh__button {
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  background: url(../images/products/arrow-right.png);
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  z-index: 44;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .about-milk__text {
+  margin-bottom: 7px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
@@ -324,6 +345,7 @@
   overflow: hidden;
 
   @media screen and (min-width: 1280px) {
+    margin-bottom: 30px;
     font-size: 14px;
     line-height: 140%;
     max-width: 200px;
