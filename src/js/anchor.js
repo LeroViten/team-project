@@ -1,7 +1,7 @@
 (function () {
 
     const smoothScroll = function (targetEl, duration) {
-        const headerElHeight =  document.querySelector('.nav').clientHeight;
+        const headerElHeight =  document.querySelector('.anchor').clientHeight;
         let target = document.querySelector(targetEl);
         let targetPosition = target.getBoundingClientRect().top - headerElHeight;
         let startPosition = window.pageYOffset;
