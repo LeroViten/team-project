@@ -1,26 +1,30 @@
-.modal__btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 176px;
-    height: 44px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.29;
-    background: #FFFFFF;
-    color: $accent-color;
-    border-style: none;
-    border-radius: 22px;
-    margin-left: 30px;
-    cursor: pointer;
-    transition: background-color $transition-duration $transition-function;
-  
-    &:focus,
-    &:hover {
-        background-color: #ECEBEB;
-    }
+.modal__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  background: $section-bg-color;
+  color: $accent-color;
+  border-style: none;
+  border-radius: 22px;
+  margin-left: 30px;
+  cursor: pointer;
+  transition: background-color $transition-duration $transition-function;
 
-    @media (max-width: 767px) {
-        display: none;
-    }
+  &:focus,
+  &:hover {
+    background-color: #ecebeb;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 110px;
+  }
 }
