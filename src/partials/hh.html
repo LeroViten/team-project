@@ -1,5 +1,5 @@
-<header class="header">
-    <div class="container">
+<header class="header-hero">
+    <div class="header container">
       <nav class="nav">
         <a href="index.html" class="logo link">
           <img src="./images/logo.png" alt="logo">
@@ -27,33 +27,65 @@
           <use href="./images/sprite.svg#icon-Burger"></use>
         </svg>
       </button>
-      <button class="main__btn" type="button">Buy now 
-        <svg class="btn__icon" Width="24" Height="24">
-          <use href="./images/sprite.svg#"></use>
+      <button class="modal__btn" type="button">Buy now 
+        <svg class="about__btn-arrow" Width="4.43" Height="8">
+          <use href="./images/sprite.svg#icon-order-arrow"></use>
         </svg>
       </button>
     </div>
     <div class="hero container">
-      <div class="hero__left-side">
-        <h1 class="hero__title">ice cream made with <span class="hero__title-red">passion</span></h1>
-        <button class="hero__btn--products" type="button">Products</button>
-        <button class="hero__btn--made" type="button">How it’s made?</button>          
-      </div>
-      <div class="hero__right-side">
-        <ul class="hero__distributes list">
-          <li class="distributes__cafe">
-            <p class="distributes__text">
-              <span>16</span>cafes</p>
-          </li>
-          <li class="distributes__truck">
-            <p class="distributes__text">
-              <span>23</span>food trucks</p>
-          </li>
-        </ul>
+      <div class="hero__side">
+        <div class="hero__left-side">
+          <h1 class="hero__title">ice cream made with <span class="hero__title-red">passion</span></h1>
+          <ul class="hero__nav-list list">
+            <li class="hero__nav-item">
+              <a class="hero__nav-link link" href="">Products</a>
+            </li>
+            <li class="hero__nav-item">
+              <a class="hero__nav-link hero__nav-link-white link" href="">How it’s made?</a>
+            </li>
+          </ul>       
+        </div>
+        <div class="hero__right-side">
+          <ul class="hero__distributes list">
+            <li class="distributes">
+              <p class="distributes__text">
+                16<span class="point">cafes</span></p>
+            </li>
+            <li class="distributes">
+              <p class="distributes__text">
+                23<span class="point">food trucks</span></p>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="about-milk">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos natus architecto ipsam repudiandae minus quibusdam totam nihil obcaecati ratione corrupti exercitationem nulla, praesentium deleniti eligendi velit deserunt quia! Quia, fuga!</p>
-      
+        <picture>
+          <source srcset="./images/hh/desktop/bioeco.png 1x,
+                          ./images/hh/desktop/bioeco@2x.png 2x"
+                          media="(min-width: 1200px)"/>
+          <source srcset="./images/hh/tablet/bioeco.png 1x,
+                          ./images/hh/tablet/bioeco@2x.png 2x"
+                          media="(min-width: 768px)"/>
+          <img src="./images/hh/tablet/bioeco.png" alt="Biomilk" />
+        </picture>
+        <Div class="milk-text">
+          <p class="about-milk__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos natus architecto ipsam repudiandae minus quibusdam totam nihil obcaecati ratione corrupti exercitationem nulla, praesentium deleniti eligendi velit deserunt quia! Quia, fuga!</p>
+        </Div>
+      </div>
+      <div class="hero-img">
+        <picture>
+          <source srcset="./images/hh/desktop/icecream.png 1x,
+                          ./images/hh/desktop/icecream@2x.png 2x"
+                          media="(min-width: 1200px)"/>
+          <source srcset="./images/hh/tablet/icecream.png 1x,
+                          ./images/hh/tablet/icecream@2x.png 2x"
+                          media="(min-width: 768px)"/>
+          <source srcset="./images/hh/mobile/icecream.png 1x,
+                          ./images/hh/mobile/icecream@2x.png 2x"
+                          media="(min-width: 320px)"/>
+          <img src="./images/hh/mobile/icecream.png" alt="Biomilk" />
+        </picture>
       </div>
     </div>
     

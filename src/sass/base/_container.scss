@@ -2,11 +2,7 @@
   width: 100%;
   margin: 0 auto;
 
-  .header & {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+
 
   @media screen and (min-width: 320px) {
     width: 280px;

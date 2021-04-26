@@ -1,5 +1,6 @@
+
 @media (max-width: 768px) {
-        .main__btn {
+    .modal-btn {
         display: none;
     }
 }
@@ -11,14 +12,6 @@
         display: none;
     }
 
-    .hero__right-side {
-        display: none;
-    }
-
-    .about-milk {
-        display: none;
-    }
-      
     .burger-btn {
         background-color: transparent;
         cursor: pointer;
@@ -29,6 +22,10 @@
         &:focus {
             fill: var();
         }
+    }
+
+    .hero__right-side {
+        display: none;
     }
 
     .burger-icon {
