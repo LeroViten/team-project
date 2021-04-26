@@ -21,6 +21,13 @@
     }
 
     @media (max-width: 767px) {
+        .header & {
         display: none;
+        }
     }
-}
+    .mobile-menu & {
+        width: 100%;
+        margin-bottom: 32px;
+        margin-left: 0;
+    }
+}        

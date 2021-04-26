@@ -26,16 +26,16 @@
   }
 }
 
-.logo {
-  padding-left: -70px;
+.logo {    
 
-  @media (min-width: 768px) {
-    padding-right: 291px;
-  }
-
-  @media (min-width: 1200px) {
-    padding-right: 110px;
-  }
+    @media (min-width: 768px) {
+        margin-right: 291px;
+    }
+    
+    @media (min-width: 1200px) {
+        margin-left: -70px;
+        margin-right: 110px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -58,10 +58,14 @@
     display: none;
   }
 
-  .nav__list {
-    display: flex;
-    align-items: center;
-  }
+    .mobile-menu {
+      display: none;
+    }
+
+    .nav__list {
+        display: flex;
+        align-items: center;
+    }
 
   .nav__item {
     &:not(:last-child) {
