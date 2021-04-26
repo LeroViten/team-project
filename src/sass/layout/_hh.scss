@@ -19,13 +19,14 @@
 }
 
 .logo {
-    margin-left: -70px;
+    
 
     @media (min-width: 768px) {
         margin-right: 291px;
     }
     
     @media (min-width: 1200px) {
+        margin-left: -70px;
         margin-right: 110px;
     }
 }
@@ -33,9 +34,7 @@
 
 
 @media (min-width: 768px) {
-    .mobile-menu {
-      display: none;
-    }
+
 
     .nav__list {
         display: none;
@@ -51,6 +50,10 @@
 @media (min-width: 1200px) {
     .burger-btn {
         display: none
+    }
+
+        .mobile-menu {
+      display: none;
     }
 
     .nav__list {
