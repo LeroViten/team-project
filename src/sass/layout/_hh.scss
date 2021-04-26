@@ -19,14 +19,14 @@
 }
 
 .logo {
-    padding-left: -70px;
+    margin-left: -70px;
 
     @media (min-width: 768px) {
-        padding-right: 291px;
+        margin-right: 291px;
     }
     
     @media (min-width: 1200px) {
-        padding-right: 110px;
+        margin-right: 110px;
     }
 }
 
