@@ -21,20 +21,19 @@
     background-color: #ecebeb;
   }
 
-
   @media screen and (min-width: 1280px) {
     margin-left: 110px;
   }
-}
 
-    @media (max-width: 767px) {
-        .header & {
-        display: none;
-        }
+  @media (max-width: 767px) {
+    .header & {
+      display: none;
     }
+
     .mobile-menu & {
-        width: 100%;
-        margin-bottom: 32px;
-        margin-left: 0;
+      width: 100%;
+      margin-bottom: 32px;
+      margin-left: 0;
     }
-}        
+  }
+}
