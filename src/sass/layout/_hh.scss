@@ -32,18 +32,18 @@
   }
 }
 
-.logo {
-  padding-left: -70px;
+.logo {    
 
-  @media screen and (min-width: 768px) {
-    padding-right: 291px;
-  }
 
   @media screen and (min-width: 1280px) {
     padding-right: 110px;
     margin-left: -68px;
   }
-}
+    @media (min-width: 768px) {
+        margin-right: 291px;
+    }
+
+
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -73,6 +73,11 @@
     align-items: center;
     z-index: 25;
   }
+    .mobile-menu {
+      display: none;
+    }
+
+  
 
   .nav__item {
     &:not(:last-child) {

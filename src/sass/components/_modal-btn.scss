@@ -21,11 +21,20 @@
     background-color: #ecebeb;
   }
 
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
 
   @media screen and (min-width: 1280px) {
     margin-left: 110px;
   }
 }
+
+    @media (max-width: 767px) {
+        .header & {
+        display: none;
+        }
+    }
+    .mobile-menu & {
+        width: 100%;
+        margin-bottom: 32px;
+        margin-left: 0;
+    }
+}        
