@@ -9,11 +9,13 @@
 
   @media screen and (min-width: 768px) {
     max-height: 399px;
+    padding-bottom: 28px;
   }
 
   @media screen and (min-width: 1280px) {
     max-height: 665px;
     overflow: visible;
+    /*padding-bottom: 42px;*/
   }
 }
 
@@ -32,18 +34,19 @@
   }
 }
 
-.logo {    
+.logo {
+  width: 199px;
+  height: 50px;
 
+  @media (min-width: 768px) {
+    margin-right: 291px;
+  }
 
   @media screen and (min-width: 1280px) {
-    padding-right: 110px;
-    margin-left: -68px;
+    margin-right: 110px;
+    margin-left: -72px;
   }
-    @media (min-width: 768px) {
-        margin-right: 291px;
-    }
 }
-
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -73,11 +76,9 @@
     align-items: center;
     z-index: 25;
   }
-    .mobile-menu {
-      display: none;
-    }
-
-  
+  .mobile-menu {
+    display: none;
+  }
 
   .nav__item {
     &:not(:last-child) {
@@ -102,30 +103,28 @@
 .hero__side {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 160px;
+  margin-bottom: 160px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 19px;
+    margin-bottom: 19px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-bottom: 56px;
+    margin-bottom: 56px;
   }
 }
 
 .hero__left-side {
-  z-index: 555;
+  z-index: 99;
   width: 208px;
-  padding-top: 137px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1279px) {
     width: 162px;
-    padding-top: 15px;
+    margin-top: 15px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 277px;
-    padding-top: 84px;
   }
 }
 
@@ -133,7 +132,6 @@
   font-family: $secondary-font;
   font-style: normal;
   font-weight: normal;
-
   font-size: 26px;
   line-height: 1.15em;
   letter-spacing: 0.04em;
@@ -141,10 +139,20 @@
   color: $white-color;
 
   &-red {
-    font-size: 48px;
-    line-height: 0.95em;
+    font-size: 34px;
+    line-height: 90.5%;
     text-transform: uppercase;
     color: $accent-color;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: 90.5%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 137px;
+    margin-bottom: 19px;
   }
 
   @media screen and (min-width: 768px) {
@@ -155,14 +163,16 @@
   @media screen and (min-width: 1280px) {
     font-size: 38px;
     line-height: 1.157em;
+    margin-top: 84px;
   }
 }
 
 .hero__nav-list {
   display: flex;
-  padding-top: 19px;
+  margin-top: 19px;
+
   @media screen and (min-width: 1280px) {
-    padding-top: 25px;
+    margin-top: 25px;
   }
 }
 
@@ -199,6 +209,16 @@
     }
   }
 }
+
+/*
+  @media screen and (max-width: 1279px) {
+    width: 62.4px;
+    height: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 104px;
+    height: 40px;
+  }*/
 
 .hero__right-side {
   display: flex;
@@ -304,10 +324,10 @@
 */
 
 .about-milk {
+  position: relative;
   display: flex;
   align-items: center;
-  padding-bottom: 45px;
-  margin-bottom: 7px;
+  /* padding-bottom: 45px;*/
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -315,7 +335,12 @@
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 20px;
+    left: -45px;
   }
+}
+
+.milk-text {
+  margin-left: 30px;
 }
 
 .hh__button {
@@ -338,7 +363,6 @@
 }
 
 .about-milk__text {
-  margin-bottom: 7px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
@@ -349,12 +373,18 @@
   max-height: 48px;
   overflow: hidden;
 
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 7px;
+    margin-top: 40px;
+  }
+
   @media screen and (min-width: 1280px) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 140%;
     max-width: 200px;
     max-height: 78px;
+    margin-top: 50px;
   }
 }
 
@@ -379,7 +409,7 @@
 */
 .hero__girl {
   position: absolute;
-  right: 8%;
+  right: 4%;
   bottom: 0;
   z-index: 50;
 
@@ -433,7 +463,7 @@
   .hero__ice-cream {
     position: absolute;
     bottom: 0;
-    right: 35%;
+    right: 30%;
     z-index: 2;
   }
   .hero__ice-cream:before {
@@ -443,8 +473,8 @@
     height: 538px;
     background-color: $pale-bg-color;
     border-radius: 50%;
-    bottom: 10%;
-    right: -74%;
+    bottom: 13.5%;
+    right: -50%;
     z-index: -1;
   }
 
