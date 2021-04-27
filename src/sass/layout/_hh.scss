@@ -61,9 +61,9 @@
     display: flex;
     align-items: center;
   }
-}
-.burger-btn {
-  z-index: 55;
+  .burger-btn {
+    z-index: 55;
+  }
 }
 
 @media screen and (min-width: 1280px) {
