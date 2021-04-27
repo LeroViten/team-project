@@ -3,6 +3,8 @@ body.modal-open {
 }
 
 .backdrop {
+  z-index: 101;
+
   position: fixed;
   top: 0;
   left: 0;
