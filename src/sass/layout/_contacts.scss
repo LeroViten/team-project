@@ -1,12 +1,17 @@
 .contacts {
+  /*height: 102px;*/
+  position: relative;
   background: $section-bg-color;
-  padding-top: 70px;
+  padding-top: 82px;
   padding-bottom: 82px;
 }
 
 .contacts-lists {
+  /*position: absolute;*/
+  /*top: -102px;*/
   display: block;
   margin: 0 auto;
+  justify-content: center;
   @media screen and (min-width: 768px) {
     display: flex;
     margin-left: -20px;
@@ -200,7 +205,6 @@
 }
 .about__btn-location {
   fill: $white-color;
-  color: $white-color;
   margin-left: 13.62px;
 }
 .contacts-button__locations {
@@ -231,13 +235,13 @@
   border: transparent;
   border-radius: 22px;
   background: $white-color;
+  margin-bottom: 10px;
   color: #d41342;
-  /*&:hover,
+  &:hover,
   &:focus {
     background: $white-color;
-  }*/
+  }
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
     margin-right: 15px;
   }
 }
