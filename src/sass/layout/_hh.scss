@@ -76,7 +76,7 @@
     display: none;
   }
 
-  .nav__item &:not(:last-child) {
+  .nav__item:not(:last-child) {
     margin-right: 35px;
   }
 
@@ -156,6 +156,7 @@
 .hero__nav-list {
   display: flex;
   padding-top: 19px;
+
   @media screen and (min-width: 1280px) {
     padding-top: 25px;
   }
