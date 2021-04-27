@@ -28,11 +28,11 @@
 }
 
     @media (max-width: 767px) {
-        .header & {
+        .header .modal__btn {
         display: none;
         }
     }
-    .mobile-menu & {
+    .mobile-menu .modal__btn {
         width: 100%;
         margin-bottom: 32px;
         margin-left: 0;
