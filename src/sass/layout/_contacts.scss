@@ -1,12 +1,17 @@
 .contacts {
+  /*height: 102px;*/
+  position: relative;
   background: $section-bg-color;
-  padding-top: 70px;
+  padding-top: 82px;
   padding-bottom: 82px;
 }
 
 .contacts-lists {
+  /*position: absolute;*/
+  /*top: -102px;*/
   display: block;
   margin: 0 auto;
+  justify-content: center;
   @media screen and (min-width: 768px) {
     display: flex;
     margin-left: -20px;
@@ -187,31 +192,19 @@
   text-decoration: none;
 }
 .contacts-button__wrapper {
-  margin-top: 54px;
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.3;
-  border-radius: 22px;
-  align-items: center;
-  text-align: center;
-  border: transparent;
-  &:not(&:last-child) {
-    margin-bottom: 10px;
-  }
-}
-.contacts-button__wrapper {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+    flex-direction: row;
+    &__item:not(:last-child) {
+      margin-right: 15px;
+    }
   }
 }
 .about__btn-location {
   fill: $white-color;
-  color: $white-color;
   margin-left: 13.62px;
 }
 .contacts-button__locations {
@@ -222,10 +215,15 @@
   border: transparent;
   border-radius: 22px;
   background: #d41342;
+  margin-bottom: 10px;
   color: $white-color;
   &:hover,
   &:focus {
     background: #d41342;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: 15px;
   }
 }
 
@@ -236,15 +234,14 @@
   padding: 8px 20px 8px 20px;
   border: transparent;
   border-radius: 22px;
-  margin-bottom: 10px;
   background: $white-color;
+  margin-bottom: 10px;
   color: #d41342;
-  /*&:hover,
+  &:hover,
   &:focus {
     background: $white-color;
-  }*/
+  }
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
     margin-right: 15px;
   }
 }
