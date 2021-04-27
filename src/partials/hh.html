@@ -1,4 +1,5 @@
 <header class="header-hero">
+  <div class="container">
     <div class="header container">
       <nav class="nav anchor">
         <a href="index.html" class="logo link">
@@ -10,7 +11,7 @@
             <a class="nav__link link"  href="index.html">Home</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link link js-scroll"  href="#about">About us</a>
+            <a class="nav__link link js-scroll"  href="#made">About us</a>
           </li>
           <li class="nav__item">
             <a class="nav__link link js-scroll"  href="#made">How it’s made?</a>
@@ -24,7 +25,7 @@
         </ul>
       </nav>
       <button class="burger-btn" type="button" data-menu-button>
-        <svg class="burger-icon">
+        <svg class="burger-icon" Width="20" Height="12">
           <use href="./images/sprite.svg#icon-Burger"></use>
         </svg>
       </button>
@@ -65,7 +66,7 @@
         <picture>
           <source srcset="./images/hh/desktop/bioeco.png 1x,
                           ./images/hh/desktop/bioeco@2x.png 2x"
-                          media="(min-width: 1200px)"/>
+                          media="(min-width: 1280px)"/>
           <source srcset="./images/hh/tablet/bioeco.png 1x,
                           ./images/hh/tablet/bioeco@2x.png 2x"
                           media="(min-width: 768px)"/>
@@ -81,7 +82,7 @@
         <picture>
           <source srcset="./images/hh/desktop/icecream.png 1x,
                           ./images/hh/desktop/icecream@2x.png 2x"
-                          media="(min-width: 1200px)"/>
+                          media="(min-width: 1280px)"/>
           <source srcset="./images/hh/tablet/icecream.png 1x,
                           ./images/hh/tablet/icecream@2x.png 2x"
                           media="(min-width: 768px)"/>
@@ -89,25 +90,21 @@
                           ./images/hh/mobile/icecream@2x.png 2x"
                           media="(min-width: 320px)"/>
           <img src="./images/hh/mobile/icecream.png" alt="Biomilk" />
-          
         </picture>
-        </div>
-        <div class="hero__girl">
-        <picture >
-<source srcset="./images/hh/desktop/tasty.png 1x,
-                          ./images/hh/desktop/tasty@2x.png 2x" media="(min-width: 1200px)" />
-<source srcset="./images/hh/tablet/tasty.png 1x,
+      </div>
+      <div class="hero__girl">
+        <picture>
+          <source srcset="./images/hh/desktop/tasty.png 1x,
+                          ./images/hh/desktop/tasty@2x.png 2x" media="(min-width: 1280px)" />
+          <source srcset="./images/hh/tablet/tasty.png 1x,
                           ./images/hh/tablet/tasty@2x.png 2x" media="(min-width: 768px)" />
-<img src="./images/hh/tablet/tasty.png" alt="testy" />
+          <img src="./images/hh/tablet/tasty.png" alt="testy" />
         </picture>
-        
-
-
       </div>
     </div>
-    <div class="mobile-menu" data-menu>
+    <div class="mobile-menu anchor" data-menu>
       <button class="mobile-menu__close-btn" type="button" data-menu-close>
-          <svg class="mobile-menu__close-icon">
+          <svg class="mobile-menu__close-icon" Width="4.43" Height="8">
               <use href="./images/sprite.svg#icon-close"></use>
           </svg>
       </button>
@@ -118,20 +115,21 @@
       </button>
       <ul class="mobile-menu__list list">
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link link" href="index.html">Home</a>
+          <a class="mobile-menu__link link js-scroll" href="index.html">Home</a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link link"  href="">About us</a>
+          <a class="mobile-menu__link link  js-scroll"  href="#made">About us</a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link link"  href="">How it’s made?</a>
+          <a class="mobile-menu__link link  js-scroll"  href="#made">How it’s made?</a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link link"  href="">Our products</a>
+          <a class="mobile-menu__link link  js-scroll"  href="#product">Our products</a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link link"  href="">Contact</a>
+          <a class="mobile-menu__link link  js-scroll"  href="#contact">Contact</a>
         </li>
       </ul>
     </div>
-  </header>
+  </div>
+</header>
