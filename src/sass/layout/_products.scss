@@ -67,6 +67,12 @@
   cursor: pointer;
 }
 
+.products-list__button:hover,
+.products-list__button:focus {
+  background: #ecebeb;
+  fill: yellow;
+}
+
 .products-list__title {
   margin-bottom: 66px;
   font-family: $secondary-font;
