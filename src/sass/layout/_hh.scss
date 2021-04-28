@@ -190,9 +190,10 @@
   padding: 10px 12px;
 
   &:hover,
-  :focus {
+  &:focus {
     color: $white-color;
     background-color: #c7133e;
+    transform: scale(1.2);
   }
 
   &-white {
@@ -200,9 +201,10 @@
     background-color: $white-color;
 
     &:hover,
-    :focus {
+    &:focus {
       color: $accent-color;
       background-color: #ecebeb;
+      transform: scale(1.2);
     }
   }
 }
@@ -343,6 +345,10 @@
     height: 26px;
   }
 }
+.hh__button:hover,
+.hh__button:focus {
+  transform: scale(1.2);
+}
 
 .about-milk__text {
   font-family: $main-font;
@@ -451,5 +457,5 @@
   }
 }
 .about__btn-arrow {
-  fill: #D41443;
+  fill: #d41443;
 }

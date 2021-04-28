@@ -50,6 +50,7 @@
   .social-links__link:hover &,
   .social-links__link:focus & {
     fill: $accent-color;
+    transform: scale(1.2);
   }
 }
 

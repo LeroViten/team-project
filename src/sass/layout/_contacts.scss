@@ -241,6 +241,7 @@
   &:hover,
   &:focus {
     background: #d41342;
+    transform: scale(1.2);
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -262,6 +263,7 @@
   &:hover,
   &:focus {
     background: #ecebeb;
+    transform: scale(1.2);
   }
   @media screen and (min-width: 768px) {
     margin-right: 15px;
@@ -271,22 +273,24 @@
 /*location*/
 
 .modal1 {
+  background: $bg-color;
   position: relative;
   padding-top: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-bottom: 10px;
   border-radius: 15px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  background-color: $white-color;
+  width: 300px;
+  height: 250px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform $transition-duration $transition-function;
   display: none;
+  position: fixed;
+  z-index: 100;
 
   @media screen and (min-width: 768px) {
     padding-top: 25px;
@@ -295,9 +299,9 @@
     padding-bottom: 20px;
     width: 600px;
     height: 450px;
-    left: 60%;
+    left: 48%;
     top: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -48%);
   }
 
   @media screen and (min-width: 1280px) {
@@ -307,9 +311,9 @@
     padding-bottom: 30px;
     width: 900px;
     height: 750px;
-    left: 57%;
+    left: 49%;
     top: 50%;
-    transform: translate(-50%, -57%);
+    transform: translate(-50%, -49%);
   }
 }
 
@@ -319,8 +323,8 @@
   float: right;
   font-size: 25px;
   font-weight: bold;
-  top: 5px;
-  right: 10px;
+  top: 0px;
+  right: 5px;
 
   @media screen and (min-width: 768px) {
     top: 0px;
@@ -333,6 +337,157 @@
     top: 0px;
     right: 10px;
   }
+}
+
+.close:hover,
+.close:focus {
+  color: $accent-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Фрнашиза*/
+.modal2 {
+  background-color: $bg-color;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  min-height: 250px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform $transition-duration $transition-function;
+  display: none;
+  position: fixed;
+  z-index: 100;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 600px;
+    height: auto;
+    left: 48%;
+    top: 50%;
+    transform: translate(-50%, -48%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    width: 700px;
+    height: auto;
+  }
+}
+
+.franchise__title {
+  margin-bottom: 25px;
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 35px;
+    line-height: 1.3;
+  }
+}
+
+.franchise__info {
+  text-align: left;
+  margin-bottom: 5px;
+  font-family: $secondary-font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.6;
+  font-style: bolt;
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}
+
+.franchise__detal {
+  margin-left: 35px;
+  padding: 0;
+  text-align: left;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  list-style-position: intside;
+
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+
+.franchise__detal:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.franchise__detal-item {
+  padding-left: 4px;
+}
+
+.close2 {
+  position: absolute;
+  color: black;
+  float: right;
+  font-size: 25px;
+  font-weight: bold;
+  top: 0px;
+  right: 10px;
+
+  @media screen and (min-width: 768px) {
+    top: 5px;
+    right: 15px;
+    font-size: 25px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 35px;
+    top: 10px;
+    right: 20px;
+  }
+}
+
+.franchise__logo-text {
+  color: $accent-color;
 }
 
 .close:hover,
