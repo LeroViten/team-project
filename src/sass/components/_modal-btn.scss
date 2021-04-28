@@ -19,21 +19,21 @@
   &:focus,
   &:hover {
     background-color: #ecebeb;
+    transform: scale(1.2);
   }
-
 
   @media screen and (min-width: 1280px) {
     margin-left: 110px;
   }
 }
 
-    @media (max-width: 767px) {
-        .header .modal__btn {
-        display: none;
-        }
-    }
-    .mobile-menu .modal__btn {
-        width: 100%;
-        margin-bottom: 32px;
-        margin-left: 0;
-    }        
+@media (max-width: 767px) {
+  .header .modal__btn {
+    display: none;
+  }
+}
+.mobile-menu .modal__btn {
+  width: 100%;
+  margin-bottom: 32px;
+  margin-left: 0;
+}

@@ -69,8 +69,7 @@
 
 .products-list__button:hover,
 .products-list__button:focus {
-  background: #ecebeb;
-  fill: yellow;
+  transform: scale(1.2);
 }
 
 .products-list__title {
