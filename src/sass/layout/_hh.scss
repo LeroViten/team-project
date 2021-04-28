@@ -213,6 +213,9 @@
   }
 }
 
+.nav__link--current {
+  color: $accent-color;
+}
 /*
   @media screen and (max-width: 1279px) {
     width: 62.4px;
