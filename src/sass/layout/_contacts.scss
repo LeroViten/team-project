@@ -247,7 +247,79 @@
     background: #ecebeb;
   }
   @media screen and (min-width: 768px) {
-
     margin-right: 15px;
   }
+}
+
+/* location*/
+
+.contacts .modal1 {
+  position: relative;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform $transition-duration $transition-function;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 600px;
+    height: 450px;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    width: 900px;
+    height: 750px;
+    left: 57%;
+    top: 50%;
+    transform: translate(-50%, -57%);
+  }
+}
+
+.close {
+  position: absolute;
+  color: black;
+  float: right;
+  font-size: 25px;
+  font-weight: bold;
+  top: 5px;
+  right: 10px;
+
+  @media screen and (min-width: 768px) {
+    top: 0px;
+    right: 10px;
+    font-size: 25px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 35px;
+    top: 0px;
+    right: 10px;
+  }
+}
+
+.close:hover,
+.close:focus {
+  color: $accent-color;
+  text-decoration: none;
+  cursor: pointer;
 }
