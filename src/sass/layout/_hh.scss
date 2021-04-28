@@ -189,6 +189,10 @@
   border-radius: 20px;
   padding: 10px 14px;
 
+  @media screen and (min-width: 1280px) {
+    font-size: 11px;
+  }
+
   &:hover,
   &:focus {
     color: $white-color;
@@ -355,7 +359,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 8px;
-  line-height: 150%;
+  line-height: 1.5;
   color: $white-color;
   max-width: 114px;
   max-height: 48px;
