@@ -206,6 +206,11 @@
 .contacts-list__link {
   color: #907e82;
   text-decoration: none;
+  transition: color $transition-duration $transition-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .contacts-button__wrapper {
   @media screen and (min-width: 768px) {
@@ -238,10 +243,11 @@
   margin-bottom: 10px;
   color: $white-color;
   fill: $white-color;
+  transition: all $transition-duration $transition-function;
   &:hover,
   &:focus {
     background: #d41342;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -260,10 +266,11 @@
   margin-bottom: 10px;
   fill: #d41342;
   color: #d41342;
+  transition: all $transition-duration $transition-function;
   &:hover,
   &:focus {
     background: #ecebeb;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   @media screen and (min-width: 768px) {
     margin-right: 15px;
@@ -346,7 +353,7 @@
   cursor: pointer;
 }
 
-/*Фрнашиза*/
+/*Franchise*/
 .modal2 {
   background-color: $bg-color;
   position: relative;
@@ -472,6 +479,7 @@
   font-weight: bold;
   top: 0px;
   right: 10px;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     top: 5px;
