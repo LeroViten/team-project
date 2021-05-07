@@ -46,11 +46,12 @@
   width: 32px;
   height: 32px;
   transition: fill $transition-duration $transition-function;
+  transition: transform $transition-duration $transition-function;
 
   .social-links__link:hover &,
   .social-links__link:focus & {
     fill: $accent-color;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
